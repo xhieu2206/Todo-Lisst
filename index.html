@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>TO-DO LIST APPLICATION</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+      </div>
+      <div class="col-sm">
+        <h2>TODO LIST APPLICATION</h2>
+        <div class="form-container">
+          <div class="mb-3">
+            <label class="form-label">Task</label>
+            <input type="text" class="form-control" id="item__description--value" placeholder="Enter your task ..." required>
+          </div>
+          <label class="form-label">Piority:</label>
+          <select class="form-select" id="item__priority--value">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+          <button type="submit" class="btn btn-primary mt-4" id="add">Add new task</button>
+        </div>
+      </div>
+      <div class="col-sm">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <h2>TODO</h2>
+        <ul class="list-group todo-items">
+        </ul>
+      </div>
+      <div class="col-sm">
+        <h2>DONE</h2>
+        <ul class="list-group done-items">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src='script.js'></script>
+</body>
+</html>
